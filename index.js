@@ -29,3 +29,24 @@ document.querySelector(".contact-form").addEventListener("submit", e => {
   e.preventDefault();
   alert("Message Sent Successfully!");
 });
+
+const hobbies = [
+  "Designing UI mockups and experimenting with layouts",
+  "Listening to music while coding",
+  "Exploring AI tools and automating workflows",
+  "Watching tech talks and learning from dev communities",
+  "Gaming and dreaming to build one someday"
+];
+
+const list = document.querySelector(".hobby-list");
+list.innerHTML = "";
+
+hobbies.forEach(hobby => {
+  const li = document.createElement("li");
+  li.textContent = hobby;
+  list.appendChild(li);
+});
+
+
+
+
